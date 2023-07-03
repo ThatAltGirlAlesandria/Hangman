@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* .keyboard{
     display: flex;
     flex-direction: column;
@@ -25,3 +26,42 @@
     outline: none;
     background-color: darkgray;
   } */
+=======
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#word-container {
+  margin-top: 30px;
+}
+
+#guesses-container {
+  margin-top: 20px;
+}
+
+#hangman-container {
+  margin-top: 40px;
+}
+
+#hangman-image {
+  width: 300px;
+  height: 300px;
+}
+
+#input-container {
+  margin-top: 30px;
+}
+
+#letter-input {
+  width: 30px;
+}
+
+#guess-button {
+  margin-left: 10px;
+}
+>>>>>>> 3db9781887d8bd89f892f1c87523a8733bce82c1
