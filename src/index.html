@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <title>Hangman</title>
 </head>
-<body>
+<body class="body">
   <h1>Hangman Game</h1>
-  <div id="word-container">
+  <id="word-container">
     <h2 id="word-display">
     </h2>
-  </div>
-      <label for="planet-select">Select a planet:</label>
-      <select id="planet-select">
-        <option value="">Select...</option>
-        <option value="mercury">Mercury</option>
-        <option value="venus">Venus</option>
-        <option value="earth">Earth</option>
-        <option value="mars">Mars</option>
-        <option value="jupiter">Jupiter</option>
-        <option value="saturn">Saturn</option>
-        <option value="uranus">Uranus</option>
-        <option value="neptune">Neptune</option>
-      </select>
-    </div>
-    
   <div id="guesses-container">
-    <h3>Guesses: <span id="guesses"></span></h3>
+    <h3>Guesses Remaining: <span id="guesses"></span></h3>
   </div>
   <div id="hangman-container">
     <img>
@@ -36,10 +19,27 @@
   <div id="input-container">
     <label for="letter-input">Enter a letter: </label>
     <input type="text" id="letter-input" />
-    <button id="guess-button">Hangman</button>
+    <button id="lockInAnswer">Hangman</button>
   </div>
-<br>
 
+  <div id="word-container">
+    <h2 id="word-display">
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+      <span class="placeholder">__</span>
+    </h2> 
+  </div>
+  <button id="newGameBtn">New Game</button>
+  <br>
+  <button id="resetGameBtn">Reset Game</button>
+  <br>
   <div class="keyboard">
   <div class="keyboardRow">
     <button class="letter">Q</button>
@@ -74,32 +74,5 @@
     <button class="letter">M</button>
   </div>
 </div>
-
-
 </body>
 </html>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hangman</title>
-  </head>
-  <body>
-    <h1>Hangman Game</h1>
-    <div id="word-container">
-      <h2 id="word-display"></h2>
-    </div>
-    <div id="guesses-container">
-      <h3>Guesses: <span id="guesses"></span></h3>
-    </div>
-    <div id="hangman-container">
-      <img id="hangman-image" src="/src/assets/hangman.jpeg" alt="Hangman" />
-    </div>
-    <div id="input-container">
-      <label for="letter-input">Enter a letter: </label>
-      <input type="text" id="letter-input" />
-      <button id="guess-button">Guess</button>
-    </div>
-  </body>
-</html>
->>>>>>> 3db9781887d8bd89f892f1c87523a8733bce82c1

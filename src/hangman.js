@@ -24,6 +24,8 @@ function Hangman (words, guesses) {
     this.updateGuessesRemaining = () => {
         document.querySelector('.guesses-container').innerHTML = `Guesses Remaining: ${this.guessesRemaining}`; 
 
+
+        
         if  (this.guessesRemaining === 0) {
             this.updateWins(1, 0);
             alert('Game Over!');
@@ -37,3 +39,24 @@ function Hangman (words, guesses) {
         this.updateGuessesRemaining();
         this.updateWins(0, 0);
     }
+
+    //added event listeners to each letter button
+const letterButtons = document.querySelectorAll('.letter');
+letterButtons.forEach(Button => {
+    Button.addEventListener('click', () => {
+        const letter = button.textContent;
+        //displays the clicked letter in word display
+        const wordDisplay = document.getElementById('word-display');
+        const placeholders = wordDisplay.getElementsByClassName('placeholder');
+
+        for (let i = 0; i < placeholders.length; i++) {
+            const placeholder = placeholders[i];
+            if (placeholder.textContent === '__') {
+                placeholder.textContent = letter;
+                break;
+            }
+        }
+        // disables button so its not clicked multiple times
+        button.disabled = true;
+    });
+});
