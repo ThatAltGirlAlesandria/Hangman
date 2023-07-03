@@ -3,13 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <title>Hangman</title>
 </head>
 <body>
   <h1>Hangman Game</h1>
   <div id="word-container">
-    <h2 id="word-display"></h2>
+    <h2 id="word-display">
+    </h2>
   </div>
+      <label for="planet-select">Select a planet:</label>
+      <select id="planet-select">
+        <option value="">Select...</option>
+        <option value="mercury">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="earth">Earth</option>
+        <option value="mars">Mars</option>
+        <option value="jupiter">Jupiter</option>
+        <option value="saturn">Saturn</option>
+        <option value="uranus">Uranus</option>
+        <option value="neptune">Neptune</option>
+      </select>
+    </div>
+    
   <div id="guesses-container">
     <h3>Guesses: <span id="guesses"></span></h3>
   </div>
@@ -19,7 +35,45 @@
   <div id="input-container">
     <label for="letter-input">Enter a letter: </label>
     <input type="text" id="letter-input" />
-    <button id="guess-button">Guess</button>
+    <button id="guess-button">Hangman</button>
   </div>
+<br>
+
+  <div class="keyboard">
+  <div class="keyboardRow">
+    <button class="letter">Q</button>
+    <button class="letter">W</button>
+    <button class="letter">E</button>
+    <button class="letter">R</button>
+    <button class="letter">T</button>
+    <button class="letter">Y</button>
+    <button class="letter">U</button>
+    <button class="letter">I</button>
+    <button class="letter">O</button>
+    <button class="letter">P</button>
+  </div>
+  <div class="keyboardRow">
+    <button class="letter">A</button>
+    <button class="letter">S</button>
+    <button class="letter">D</button>
+    <button class="letter">F</button>
+    <button class="letter">G</button>
+    <button class="letter">H</button>
+    <button class="letter">J</button>
+    <button class="letter">K</button>
+    <button class="letter">L</button>
+  </div>
+  <div class="keyboardRow">
+    <button class="letter">Z</button>
+    <button class="letter">X</button>
+    <button class="letter">C</button>
+    <button class="letter">V</button>
+    <button class="letter">B</button>
+    <button class="letter">N</button>
+    <button class="letter">M</button>
+  </div>
+</div>
+
+
 </body>
 </html>

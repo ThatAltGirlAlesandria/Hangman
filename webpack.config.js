@@ -18,7 +18,7 @@ module.exports = {
     new ESLintPlugin(),
     new Dotenv(),
     new CleanWebpackPlugin({
-      verbose: true
+      verbose: true 
     }),
     new HtmlWebpackPlugin({
       title: 'Hangman',

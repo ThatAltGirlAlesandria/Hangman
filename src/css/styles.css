@@ -1,0 +1,27 @@
+/* .keyboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.keyboardRow{
+    display: flex;
+    gap: 10px;
+}
+
+.letter{
+    padding: 10px;
+    font-size: 16px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+.letter:hover {
+    background-color: gray;
+  }
+  
+  .letter:focus {
+    outline: none;
+    background-color: darkgray;
+  } */
