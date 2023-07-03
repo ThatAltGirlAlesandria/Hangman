@@ -1,7 +1,7 @@
 {
-  "name": "shape-tracker",
+  "name": "Hangman",
   "version": "1.0.0",
-  "description": "",
+  "description": "* _List all_\r * _the major technologies_\r * _you used in your project_\r * _here_",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
@@ -35,5 +35,13 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThatAltGirlAlesandria/Hangman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThatAltGirlAlesandria/Hangman/issues"
+  },
+  "homepage": "https://github.com/ThatAltGirlAlesandria/Hangman#readme"
 }

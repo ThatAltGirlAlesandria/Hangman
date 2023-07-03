@@ -1,4 +1,4 @@
-# (Application Name)
+# Hangman
 
 #### (Brief Description of Application)
 
