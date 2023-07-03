@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hangman</title>
-</head>
-<body>
-  <h1>Hangman Game</h1>
-  <div id="word-container">
-    <h2 id="word-display"></h2>
-  </div>
-  <div id="guesses-container">
-    <h3>Guesses: <span id="guesses"></span></h3>
-  </div>
-  <div id="hangman-container">
-    <img>
-  </div>
-  <div id="input-container">
-    <label for="letter-input">Enter a letter: </label>
-    <input type="text" id="letter-input" />
-    <button id="guess-button">Guess</button>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <div id="word-container">
+      <h2 id="word-display"></h2>
+    </div>
+    <div id="guesses-container">
+      <h3>Guesses: <span id="guesses"></span></h3>
+    </div>
+    <div id="hangman-container">
+      <img
+        id="hangman-image"
+        src="./assets/pictures/hangman2.png"
+        alt="Hangman"
+      />
+    </div>
+    <div id="input-container">
+      <label for="letter-input">Enter a letter: </label>
+      <input type="text" id="letter-input" />
+      <button id="guess-button">Guess</button>
+    </div>
+  </body>
 </html>
