@@ -59,4 +59,7 @@ letterButtons.forEach(Button => {
         // disables button so its not clicked multiple times
         button.disabled = true;
     });
+
+    
+
 });

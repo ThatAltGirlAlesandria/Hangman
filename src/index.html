@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
   <title>Hangman</title>
 </head>
 <body class="body">
@@ -13,16 +15,18 @@
   <div id="guesses-container">
     <h3>Guesses Remaining: <span id="guesses"></span></h3>
   </div>
-  <div id="hangman-container">
-    <img>
-  </div>
-  <div id="input-container">
-    <label for="letter-input">Enter a letter: </label>
-    <input type="text" id="letter-input" />
-    <button id="lockInAnswer">Hangman</button>
+
+  <div id="placeholder" class="placeholder">
+    <div id="cell0" class="cell"></div>
+    <div id="cell1" class="cell"></div>
+    <div id="cell2" class="cell"></div>
+    <div id="cell3" class="cell"></div>
+    <div id="cell4" class="cell"></div>
+    <div id="cell5" class="cell"></div>
+    <div id="cell6" class="cell"></div>
   </div>
 
-  <div id="word-container">
+  <!-- <div id="word-container">
     <h2 id="word-display">
       <span class="placeholder">__</span>
       <span class="placeholder">__</span>
@@ -35,44 +39,49 @@
       <span class="placeholder">__</span>
       <span class="placeholder">__</span>
     </h2> 
-  </div>
-  <button id="newGameBtn">New Game</button>
+  </div> -->
   <br>
-  <button id="resetGameBtn">Reset Game</button>
-  <br>
+
   <div class="keyboard">
   <div class="keyboardRow">
-    <button class="letter">Q</button>
-    <button class="letter">W</button>
-    <button class="letter">E</button>
-    <button class="letter">R</button>
-    <button class="letter">T</button>
-    <button class="letter">Y</button>
-    <button class="letter">U</button>
-    <button class="letter">I</button>
-    <button class="letter">O</button>
-    <button class="letter">P</button>
+    <button class="letter" id="letter0">Q</button>
+    <button class="letter" id="letter1">W</button>
+    <button class="letter" id="letter2">E</button>
+    <button class="letter" id="letter3">R</button>
+    <button class="letter" id="letter4">T</button>
+    <button class="letter" id="letter5">Y</button>
+    <button class="letter" id="letter6">U</button>
+    <button class="letter" id="letter7">I</button>
+    <button class="letter" id="letter8">O</button>
+    <button class="letter" id="letter9">P</button>
   </div>
   <div class="keyboardRow">
-    <button class="letter">A</button>
-    <button class="letter">S</button>
-    <button class="letter">D</button>
-    <button class="letter">F</button>
-    <button class="letter">G</button>
-    <button class="letter">H</button>
-    <button class="letter">J</button>
-    <button class="letter">K</button>
-    <button class="letter">L</button>
+    <button class="letter" id="letter10">A</button>
+    <button class="letter" id="letter11">S</button>
+    <button class="letter" id="letter12">D</button>
+    <button class="letter" id="letter13">F</button>
+    <button class="letter" id="letter14">G</button>
+    <button class="letter" id="letter15">H</button>
+    <button class="letter" id="letter16">J</button>
+    <button class="letter" id="letter17">K</button>
+    <button class="letter" id="letter18">L</button>
   </div>
   <div class="keyboardRow">
-    <button class="letter">Z</button>
-    <button class="letter">X</button>
-    <button class="letter">C</button>
-    <button class="letter">V</button>
-    <button class="letter">B</button>
-    <button class="letter">N</button>
-    <button class="letter">M</button>
+    <button class="letter" id="letter19">Z</button>
+    <button class="letter" id="letter20">X</button>
+    <button class="letter" id="letter21">C</button>
+    <button class="letter" id="letter22">V</button>
+    <button class="letter" id="letter23">B</button>
+    <button class="letter" id="letter24">N</button>
+    <button class="letter" id="letter25">M</button>
   </div>
+
+  <button id="newGameBtn">New Game</button>
+  <button id="resetGameBtn">Reset Game</button>
+
+
+
 </div>
+
 </body>
 </html>

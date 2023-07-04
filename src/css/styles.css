@@ -3,8 +3,6 @@
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
-  translate: (40%,100%);
-  
 }
 
 .keyboardRow{
@@ -42,7 +40,6 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transform: translate(373%, 40%);
   }
   
   #resetGameBtn:hover {
@@ -61,8 +58,12 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transform: translateX(390%);
-    
+  }
+
+  #newGameBtn, #resetGameBtn {
+    width: 150px;
+    height: 40px;
+   transform: translate(740%, -930%) 
   }
   
   #newGameBtn:hover {
@@ -72,6 +73,9 @@
   #newGameBtn:focus {
     outline: none;
   }
+
+
+
 
   #word-display {
     font-size: 30px; 
@@ -84,11 +88,11 @@
   }
 
 
-.body{
+/* .body{
   background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/6275.jpg');
   background-size: cover;
+}  */
 
-}
 
 body {
   font-family: Arial, sans-serif;
