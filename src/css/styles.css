@@ -11,7 +11,13 @@ body {
 }
 
 h1 {
-  color:whitesmoke;
+  color: black;
+  text-align: center;
+  font-size: 100px;
+  -webkit-text-stroke: 3px #0ef;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  animation: neonGlow 1s ease-in-out infinite alternate-reverse;
 }
 
 h3 {
@@ -96,19 +102,19 @@ p {
   color: whitesmoke;
 }
 
-#lives {
+#guesses {
   position: absolute;
   left: 20px;
   top: 20px;
   color: whitesmoke;
 }
 
-#lives p {
+#guesses p {
   margin: 0;
   font-size: 18px;
 }
 
-#livesCount {
+#guessCount {
   font-weight: bold;
 }
 
@@ -135,4 +141,19 @@ body {
 button.disabled {
   pointer-events: none;
   opacity: 0.1;
+}
+
+.disclaimer{
+  font-size: 10px;
+  color: #0ef;
+}
+
+@keyframes neonGlow {
+  0% {
+      text-shadow: 0 0 20px rgb(0, 204, 255), 0 0 40px rgb(0, 123, 255), 0 0 60px rgb(0, 208, 255);
+  }
+
+  100% {
+      text-shadow: 0 0 10px rgb(0, 208, 255), 0 0 20px rgb(0, 123, 255), 0 0 30px rgb(0, 204, 255);
+  }
 }
