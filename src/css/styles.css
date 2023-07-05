@@ -88,11 +88,12 @@
   }
 
 
-/* .body{
+.body{
   background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/6275.jpg');
   background-size: cover;
-}  */
+} 
 
+/* http://davenhauser.github.io/Hangman/ */
 
 body {
   font-family: Arial, sans-serif;
@@ -105,7 +106,7 @@ h1 {
 }
 
 h3{
-  color:azure;
+  color:black;
 }
 
 #word-container {
@@ -136,7 +137,3 @@ h3{
 #guess-button {
   margin-left: 10px;
 }
-
-/* .grayscale-image {
-  filter: grayscale(100%);
-} */

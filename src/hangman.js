@@ -60,6 +60,8 @@ letterButtons.forEach(Button => {
         button.disabled = true;
     });
 
-    
+    const keyboardLetter = document.getElementsByClassName('letter');
+
+    for ()
 
 });
