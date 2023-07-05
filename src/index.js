@@ -4,7 +4,7 @@ import './css/styles.css';
 import './hangman.js';
 
 const game = {
-  secretWords: ["ALESANDRIA", "ALEJANDRA", "AARON", "JASE", "PIER"],
+  secretWords: ['pluto', 'mars', 'jupiter', 'earth', 'mercury', 'venus', 'uranus', 'neptune', 'saturn'],
   secretWord: "",
   placeholders: [],
   guesses: 6,
