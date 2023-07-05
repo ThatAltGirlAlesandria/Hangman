@@ -11,10 +11,10 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #0ef;
   text-align: center;
   font-size: 100px;
-  -webkit-text-stroke: 3px #0ef;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
   font-family: sans-serif;
   text-transform: uppercase;
   animation: neonGlow 1s ease-in-out infinite alternate-reverse;
@@ -60,7 +60,7 @@ p {
   margin: 5px;
   border: 1px solid #AAA;
   background-color: whitesmoke;
-  color: rgb(64, 63, 63);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 18px;
   border-radius: 4px;
@@ -150,10 +150,10 @@ button.disabled {
 
 @keyframes neonGlow {
   0% {
-      text-shadow: 0 0 20px rgb(0, 204, 255), 0 0 40px rgb(0, 123, 255), 0 0 60px rgb(0, 208, 255);
+      text-shadow: 0 0 20px rgb(230, 0, 255), 0 0 40px rgb(200, 0, 255), 0 0 60px rgb(157, 0, 255);
   }
 
   100% {
-      text-shadow: 0 0 10px rgb(0, 208, 255), 0 0 20px rgb(0, 123, 255), 0 0 30px rgb(0, 204, 255);
+      text-shadow: 0 0 10px rgb(157, 0, 255), 0 0 20px rgb(200, 0, 255), 0 0 30px rgb(230, 0, 255);
   }
 }

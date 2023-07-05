@@ -2,70 +2,12 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import './hangman.js';
-
-const game = {
-
-  categories:'https://www.wordgamedb.com/api/v1/categories', // this line isnt correct, we need it pull a word from the api and for it show on the screen
-  secretWord: "",
-  placeholders: [],
-  guesses: 6,
-
-  
-
-  async newGame() {
-    try {
-      const categoryResponse = await fetch('https://www.wordgamedb.com/api/v1/categories');
-      const categoryData = await categoryResponse.json();
-      const categories = categoryData.categories;
-
-      const randomCategory = Math.floor(Math.random() * categories.length); // categories property needs to get fixed.
-      const category = categories[randomCategory];
-
-      const wordResponse = await fetch(`https://www.wordgamedb.com/api/v1/words?category=${category}`);
-      const wordsData = await wordResponse.json();
-      const words = wordsData.words;
-
-      const randomWord = Math.floor(Math.random() * words.length);
-      this.secretWord = words[randomWord].toUpperCase();
-      this.placeholders = Array(this.secretWord.length).fill("_");
-      this.guesses = 6;
-      console.log("Game");
-    } catch (error) {
-      console.log('An error has ocurred while fetching the data');
-    }
-    // const randomIndex = Math.floor(Math.random() * this.secretWords.length);
-    // this.secretWord = this.secretWords[randomIndex];
-    // this.placeholders = Array(this.secretWord.length).fill("_");
-    // this.guesses = 6;
-    // console.log("Game");
-  },
-
-  checkLetter(letter) {
-    const letterFound = this.secretWord.includes(letter);
-    if (!letterFound) {
-      this.guesses--;
-    } else {
-      for (let i = 0; i < this.secretWord.length; i++) {
-        if (this.secretWord[i] === letter) {
-          this.placeholders[i] = letter;
-        }
-      }
-    }
-    return letterFound;
-  },
-
-  isWordComplete() {
-    return !this.placeholders.includes("_");
-  },
-};
-
-
 // ui logic 
 
 const startGameButton = document.getElementById("startGame");
 const reloadGameButton = document.getElementById("reloadGame");
 const letters = document.querySelectorAll(".letter");
-console.log(letters)
+console.log(letters);
 const winningMessage = document.getElementById("winningMessage");
 const guessCount = document.getElementById("guessCount");
 
@@ -89,23 +31,25 @@ async function startGame() {
   }
 }
 function updateHangmanImage() {
-const hangmanImg = document.getElementById("hangmanImg")
+  const hangmanImg = document.getElementById("hangmanImg");
 
-if (guesses === 6) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png');
-    } else if (guesses === 5) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/3/30/Hangman-1.png');
-    } else if (guesses === 4) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/7/70/Hangman-2.png');
-    } else if (guesses === 3) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/9/97/Hangman-3.png');
-    } else if (guesses === 2) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/2/27/Hangman-4.png');
-    } else if (guesses === 1) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Hangman-5.png');
-    } else if (guesses === 0) {
-  hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Hangman-6.png');
+  if (guesses === 6) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png');
+  } else if (guesses === 5) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/3/30/Hangman-1.png');
+  } else if (guesses === 4) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/7/70/Hangman-2.png');
+  } else if (guesses === 3) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/9/97/Hangman-3.png');
+  } else if (guesses === 2) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/2/27/Hangman-4.png');
+  } else if (guesses === 1) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Hangman-5.png');
+  } else if (guesses === 0) {
+    hangmanImg.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Hangman-6.png');
   }
+  updateGuessCount()
+
 }
 
 function handleLetterClick(event) {
@@ -136,7 +80,7 @@ function reloadGame() {
 
 function updateWordDisplay() {
   const wordDisplay = document.getElementById("wordDisplay");
-  wordDisplay.textContent = game.placeholders.join(" ");
+  wordDisplay.innerHTML = 
 }
 
 function disableElement(element) {
