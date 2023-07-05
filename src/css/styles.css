@@ -1,139 +1,138 @@
-.keyboard {
+body {
+  font-family: arial;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/6275.jpg');
+  background-size: cover; 
 }
 
-.keyboardRow{
+h1 {
+  color:whitesmoke;
+}
+
+h3 {
+  color:whitesmoke;
+}
+
+#wordDisplay {
+  margin-bottom: 20px;
+  width: 250px;
+  position: relative;
+}
+
+#word {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+p {
+  color: whitesmoke;
+}
+
+#keyboard {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.keyboardRow {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .letter {
-  padding: 10px;
-  font-size: 16px;
-  background-color: lightgray;
-  border: none;
-  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid #AAA;
+  background-color: whitesmoke;
+  color: rgb(64, 63, 63);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
   cursor: pointer;
-  outline: none;
-  box-shadow: 0 2px 6px #000;
-  outline: 1.5px solid #000;
+}
+
+#startGame, #reloadGame {
+  margin-top: 50px;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#reloadGame {
+  background-color: #353535;
+}
+
+#reloadGame:hover{
+  background-color: black;
+}
+
+#startGame{
+  background-color: rgb(192, 64, 64);
+}
+
+#startGame:hover{
+  background-color: red;
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
+#lives {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: whitesmoke;
+}
+
+#lives p {
+  margin: 0;
+  font-size: 18px;
+}
+
+#livesCount {
+  font-weight: bold;
 }
 
 .letter:hover {
-  background-color: darkgray;
+  background-color: rgba(98, 65, 101, 0.243);
+  color: #FFF;
 }
 
-.letter:focus {
-  outline: none;
-  background-color: darkgray;
+#wordDisplay{
+  font-size: large;
 }
 
-  #resetGameBtn {
-    background-color: #ff4d4d;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #resetGameBtn:hover {
-    background-color: #e13636;
-  }
-  
-  #resetGameBtn:focus {
-    outline: none;
-  }
-
-  #newGameBtn {
-    background-color: rgb(36, 36, 36);
-    color: white;
-    font-size: 16px;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  #newGameBtn, #resetGameBtn {
-    width: 150px;
-    height: 40px;
-   transform: translate(740%, -930%) 
-  }
-  
-  #newGameBtn:hover {
-    background-color: #181818;
-  }
-  
-  #newGameBtn:focus {
-    outline: none;
-  }
-
-
-
-
-  #word-display {
-    font-size: 30px; 
-  }
-  
-  .placeholder {
-    margin-right: 12px;
-    background-color: black;
-    color: white;
-  }
-
-
-.body{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/6275.jpg');
-  background-size: cover;
-} 
-
-/* http://davenhauser.github.io/Hangman/ */
+.letter.selected {
+  background-color: #69c;
+  color: #FFF;
+}
 
 body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-h1 {
-  margin-top: 20px;
-  color:azure;
-}
 
-h3{
-  color:black;
-}
-
-#word-container {
-  margin-top: 30px;
-}
-
-#guesses-container {
-  margin-top: 20px;
-}
-
-#hangman-container {
-  margin-top: 40px;
-}
-
-/* #hangman-image {
-  width: 300px;
-  height: 300px;
-} */
-
-#input-container {
-  margin-top: 30px;
-}
-
-#letter-input {
-  width: 30px;
-}
-
-#guess-button {
-  margin-left: 10px;
+button.disabled {
+  pointer-events: none;
+  opacity: 0.1;
 }
