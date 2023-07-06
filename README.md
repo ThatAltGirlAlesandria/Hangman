@@ -1,12 +1,14 @@
 # Hangman
 
-#### Group Project by:
+## Team Members
 
-- Alejandra El-Dasouki <alejagr1998@gmail.com>
-- Alesandria Wild <thataltgirlalesandria@gmail.com>
-- Jase Grable <jase.grable@gmail.com>
-- Pier Rodriguez <pierknows@gmail.com>
-- Aaron Demski <ajdemski@frontier.com>
+| **Contributing Team Members** | **Github**                                        | **LinkedIn**                                                  |
+| ----------------------------- | ------------------------------------------------- | ------------------------------------------------------------- |
+| Alejandra El-Dasouki          | [Github](https://github.com/Alejandra-eldasouki)  | [LinkedIn](https://www.linkedin.com/in/alejandrael-dasouki/)  |
+| Alesandria Wild               | [Github](https://github.com//Rigby-David)         | [LinkedIn](https://www.linkedin.com/in/jase-grable/)          |
+| Jase Grable                   | [Github](https://github.com/JaseGrable)           | [LinkedIn](https://www.linkedin.com/in/kashitamang/)          |
+| Pier Rodriguez                | [Github](https://github.com/pierknows1)           | [LinkedIn](https://www.linkedin.com/in/pier-rodriguez1/)      |
+| Aaron Demski                  | [Github](https://github.com/ajdemski)             | [LinkedIn](https://www.linkedin.com/in/aaron-demski/)         |
 
 ## Technologies Used
 
@@ -19,9 +21,8 @@
 - Github
 - Node.js
 
-## Whiteboard
-
-[Group Project Whiteboard] (https://miro.com/welcomeonboard/Z3l2c280MWg3MUJ6Ync4WGdzbGF4SDYxc0F6b1pWV0VCSGdVWkdRa3kwd09IVzhDSmxzTEdueUs1eDFRWHZmVnwzMDc0NDU3MzU4OTM5NTAzNDM3fDI=?share_link_id=258497234585)
+## Planning/Wireframes
+[Miro Board](https://miro.com/app/board/uXjVM5F9VYw=/)
 
 ## Description
 
