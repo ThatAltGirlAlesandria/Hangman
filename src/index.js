@@ -18,7 +18,6 @@ letters.forEach((letter) => {
 
 function startGame() {
   game.newGame();
-  console.log(game);
   updateWordDisplay();
   disableElement(startGameButton);
   enableElement(reloadGameButton);
@@ -35,11 +34,11 @@ function handleLetterClick(event) {
   disableElement(event.target);
 
   if (letterFound && game.isWordComplete()) {
-    showWinningMessage("I mean it isn't that hard to get it right, there are only 8 planets");
+    showWinningMessage("Bravo! You've transcended mere mortals and conquered the Galactic Hangman. The universe now recognizes you as the ultimate 'Linguistic Jedi Master.' May the words be with you!");
     enableElement(reloadGameButton);
     disableLetters();
   } else if (!letterFound && game.guesses === 0) {
-    showWinningMessage("lol, dead.");
+    showWinningMessage("Alas, the celestial forces were not in your favor today. You've stumbled upon the cosmic riddle and failed to decode it. Fear not, young padawan, for the path to lexical enlightenment is paved with countless failed attempts.");
     enableElement(reloadGameButton);
     disableLetters();
   }
@@ -56,10 +55,13 @@ function updateWordDisplay() {
 
 function disableElement(element) {
   element.disabled = true;
+  element.style.backgroundColor = "transparent";
+
 }
 
 function enableElement(element) {
   element.disabled = false;
+  element.style.backgroundColor = "";
 }
 
 function enableLetters() {
