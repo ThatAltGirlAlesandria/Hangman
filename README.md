@@ -5,8 +5,8 @@
 | **Contributing Team Members** | **Github**                                        | **LinkedIn**                                                  |
 | ----------------------------- | ------------------------------------------------- | ------------------------------------------------------------- |
 | Alejandra El-Dasouki          | [Github](https://github.com/Alejandra-eldasouki)  | [LinkedIn](https://www.linkedin.com/in/alejandrael-dasouki/)  |
-| Alesandria Wild               | [Github](https://github.com//Rigby-David)         | [LinkedIn](https://www.linkedin.com/in/jase-grable/)          |
-| Jase Grable                   | [Github](https://github.com/JaseGrable)           | [LinkedIn](https://www.linkedin.com/in/kashitamang/)          |
+| Alesandria Wild               | [Github](https://github.com/ThatAltGirlAlesandria)| [LinkedIn](https://www.linkedin.com/in/alesandria-wild/)      |
+| Jase Grable                   | [Github](https://github.com/JaseGrable)           | [LinkedIn](https://www.linkedin.com/in/jase-grable/)          |
 | Pier Rodriguez                | [Github](https://github.com/pierknows1)           | [LinkedIn](https://www.linkedin.com/in/pier-rodriguez1/)      |
 | Aaron Demski                  | [Github](https://github.com/ajdemski)             | [LinkedIn](https://www.linkedin.com/in/aaron-demski/)         |
 
