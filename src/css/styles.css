@@ -48,6 +48,15 @@ p {
   margin-top: 50px;
 }
 
+#winningMessage{
+  color: #0ef;
+  text-align: center;
+  font-size: 50px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
 .keyboardRow {
   display: flex;
   justify-content: center;

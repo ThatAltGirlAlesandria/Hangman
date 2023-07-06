@@ -31,16 +31,15 @@ function handleLetterClick(event) {
   if (game.guesses === 0) return;
   const letter = event.target.innerText;
   const letterFound = game.checkLetter(letter);
-  // console.log(letterFound);
   updateWordDisplay();
   disableElement(event.target);
 
   if (letterFound && game.isWordComplete()) {
-    showWinningMessage("Congratulations! You guessed the word.");
+    showWinningMessage("I mean it isn't that hard to get it right, there are only 8 planets");
     enableElement(reloadGameButton);
     disableLetters();
   } else if (!letterFound && game.guesses === 0) {
-    showWinningMessage("Game Over! You ran out of guesses.");
+    showWinningMessage("lol, dead.");
     enableElement(reloadGameButton);
     disableLetters();
   }
